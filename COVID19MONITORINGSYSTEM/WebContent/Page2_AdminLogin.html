@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Login Page</title>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+.or-seperator 
+{
+        margin-top: 30px;
+		text-align: center;
+		border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+		color: #666;
+        padding: 0 8px;
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+		text-align: center;
+		line-height: 26px;
+		background: #fff;
+		display: inline-block;
+		position: relative;
+		top: -10px;
+		z-index: 1;
+    }
+.fb {
+  background-color: #3B5998;
+  color: white;
+  width:260px
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+  width:260px
+}
+
+.gmail
+{
+  background-color: #9ACD32;
+  color: white;
+  width:260px
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head> 
+<body>
+<div class="container">
+            <div class="row">
+                
+                    <button class="btn btn-primary btn-lg pull-right" data-target="#loginModal" data-toggle="modal">Admin Login</button>
+                    
+                    <div class="modal fade" tabindex="-1" id="loginModal" data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div style="background-color:skyblue" class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        &times;
+                                    </button>
+                                    <h4 style="text-align:center" class="modal-title" >Sign in</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <form action="LoginPage.jsp" method="post">
+                                            <div class="form-group"> 
+                                                <div class="input-group">
+                                                <input class="form-control" name="umail" type="email" placeholder="mail@example.com"/>
+                                                <div class="input-group-addon">
+                                                <i class="fa fa-envelope icon pull-right"></i> 
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                <input class="form-control" name="upwd" type="password" placeholder="password"/>
+                                                <div class="input-group-addon">
+                                                <i class="fa fa-lock icon pull-right"></i> 
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="SelectList1">User Type</label>
+                                                <select class="form-control" id="usertype" name="utype">
+                                                      <option>--Select--</option>
+                                                      <option>Admin</option>
+                                                </select>
+                                            </div>
+                                            <br>
+                                            <input style="background-color:green" href="LoginPage.jsp" type="submit" class="btn btn-primary btn-block" value="Log In">
+                                            <br>
+                                            <div class="form-footer">
+                                                <a style="color:black;align:center" href="RegistrationPage.html">New User. Register Here!!</a>                                                 
+                                            </div>
+                                            <div class="or-seperator"><b>OR</b></div>
+                                            
+                                            <div class="form-group social-btn clearfix">
+                                            
+                                            <a href="https://www.facebook.com" class="fb btn">
+                                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href="https://accounts.google.com/" class="google btn">
+                                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                                            </a>
+                                            <br>
+                                            <br>
+                                            </div>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+</body>
+</html>                                                                                    
